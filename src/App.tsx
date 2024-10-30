@@ -1,12 +1,12 @@
 import React from 'react';
-import ProdutoListar from './ProdutoListar';
+import ConsultarCEP from './ConsultarCEP';
 
 function App() {
   return (
     <div>
-      <ProdutoListar />
+      <ConsultarCEP />
     </div>
   )
 }
 
-export default App;
+export default App
