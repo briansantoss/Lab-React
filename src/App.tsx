@@ -1,14 +1,12 @@
 import React from 'react';
-import ProdutoListar from './ProdutoListar';
+import ConsultarCEP from './ConsultarCEP';
 
 function App() {
   return (
-    <div className='centralizar'>
-      <h1>Projeto em React!</h1>
-      <p>Seja muito bem vindo(a) ao meu primeiro website feito usando da biblioteca React</p>
-      <ProdutoListar nome='Brian Santos' />
+    <div>
+      <ConsultarCEP />
     </div>
   )
 }
 
-export default App;
+export default App
