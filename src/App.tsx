@@ -1,10 +1,12 @@
 import React from 'react';
-import ConsultarCEP from './ConsultarCEP';
+import ProdutoListar from './components/pages/produto/ProdutoListar';
+import ProdutoCadastro from './components/pages/produto/ProdutoCadastro';
 
 function App() {
   return (
     <div>
-      <ConsultarCEP />
+      <ProdutoCadastro />
+      <ProdutoListar />
     </div>
   )
 }

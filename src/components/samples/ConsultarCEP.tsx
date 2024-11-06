@@ -7,17 +7,7 @@ function ConsultarCEP() {
     const [logradouro, setLogradouro] = useState("")
 
     // Biblioteca AXIOS
-    useEffect(() => {
-        fetch("http://localhost:5262/produto/cadastrar")
-        .then(resposta => {
-            return resposta.json()
-        .then(produtos => {
-            console.log(produtos)
-        })
-        })
-    })
-
-    function carregarCEP() {
+    function consultarCEP() {
         fetch(`https://viacep.com.br/ws/${cep}/json`)
         .then(resposta => resposta.json())
         .then(cepRecebido => {
@@ -30,8 +20,8 @@ function ConsultarCEP() {
     return (
         <>
             <h1>Consultar CEP</h1>
-            <input placeholder="Digite o CEP" onChange={(e : any) => setCep(e.target.value)}></input>
-            <input type="submit" value="Enviar" onClick={carregarCEP}/>
+            <input placeholder="Digite o CEP" onChange={(e : any) => setCep(e.target.value)} />
+            <input type="submit" value="Consultar" onClick={consultarCEP} />
             <p>{bairro}</p>
             <p>{estado}</p>
             <p>{logradouro}</p>
